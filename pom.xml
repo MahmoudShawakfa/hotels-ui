@@ -14,7 +14,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.0.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 
 	<properties>
@@ -30,6 +30,16 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
@@ -39,22 +49,21 @@
 			<artifactId>hotel-request-handler</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/hotel-request-handler-0.0.1-SNAPSHOT.jar
-			</systemPath>
+			<systemPath>${project.basedir}/lib/hotel-request-handler-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.expedia.assignment</groupId>
 			<artifactId>hotels-models</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/hotels-models-0.0.1-SNAPSHOT.jar</systemPath>
+			<systemPath>${project.basedir}/lib/hotels-models-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.expedia.assignment</groupId>
 			<artifactId>hotels-parser</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/hotels-parser-0.0.1-SNAPSHOT.jar</systemPath>
+			<systemPath>${project.basedir}/lib/hotels-parser-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 	</dependencies>
 

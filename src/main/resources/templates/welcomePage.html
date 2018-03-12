@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<form accept-charset="UTF-8" action="action_page.php" th:action="@{/welcomePage}" th:object="${filter}" autocomplete="off" method="POST" target="_blank"><fieldset><legend>Title:</legend>
+<form accept-charset="UTF-8" action="action_page.php" th:action="@{/postPage}" th:object="${filter}" autocomplete="off" method="POST" target="_blank"><fieldset><legend>Title:</legend>
     <input th:field="*{destinationFilterType}" checked="checked" name="Destination" type="radio" value="destinationName" />Destination Name
     <input th:field="*{destinationFilterType}" name="Destination" type="radio" value="destinationCity" />Destination City
     <input th:field="*{destinationFilterType}" name="Destination" type="radio" value="regionId" /> Region Id <br />
