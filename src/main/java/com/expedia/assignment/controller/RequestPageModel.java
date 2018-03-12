@@ -1,7 +1,5 @@
 package com.expedia.assignment.controller;
 
-import org.springframework.context.annotation.Bean;
-
 import java.util.Date;
 
 
@@ -34,12 +32,12 @@ public class RequestPageModel {
         this.lengthOfStay = lengthOfStay;
     }
 
-    public  RequestPageModel(){
+    public RequestPageModel() {
 
 
     }
 
-    public RequestPageModel(String destination, int destinationParam, Date minStartDate, Date maxStartDate, String minStarRating, String maxStarRating, String minTotalRating, String maxTotalRating, String minGuestRating, String maxGuestRating,String lengthOfStay) {
+    public RequestPageModel(String destination, int destinationParam, Date minStartDate, Date maxStartDate, String minStarRating, String maxStarRating, String minTotalRating, String maxTotalRating, String minGuestRating, String maxGuestRating, String lengthOfStay) {
         this.destination = destination;
         this.minStartDate = minStartDate;
         this.maxStartDate = maxStartDate;
@@ -49,7 +47,7 @@ public class RequestPageModel {
         this.maxTotalRating = maxTotalRating;
         this.minGuestRating = minGuestRating;
         this.maxGuestRating = maxGuestRating;
-        this.lengthOfStay=lengthOfStay;
+        this.lengthOfStay = lengthOfStay;
     }
 
     private String maxGuestRating;
